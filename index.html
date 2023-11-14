@@ -22,7 +22,9 @@
         <div>KONTAK</div>
     </nav>
 
-    <nav class="video"></nav>
+    <nav class="video">
+        <video controls src="assets/kumbang-vid.mp4"></video>
+    </nav>
     <nav class="whatsapp">
         <div class="text">
             <p>Butuh bantuan? </p> <p style="font-weight: bold;">Hubungi Kami</p>
@@ -39,30 +41,53 @@
 
         <div class="school-tour">
             <h1>School Tour</h1>
-            <span class="school-tour-video"></span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kxwfb4X4T2g?si=Ifk3iI1XyZUsMpRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </span>
 
     <span class="page3">
         <h1>Mengapa Memilih Sekolah Kusuma Bangsa</h1>
-        <div class="slideshow"></div>
+        <div class="slideshow">
+            <div class="minus" id="minus"><</div>
+            <div class="plus" id="plus">></div>
+            <div class="image one">
+            </div>
+            <div class="image two">
+            </div>
+            <div class="image three">
+            </div>
+        </div>
     </span>
 
     <span class="page4">
-        <div class="slideshow2"></div>
+        <div class="slideshow2">
+            <div class="minus2" id="minus2"><</div>
+            <div class="plus2" id="plus2">></div>
+            <div class="image2 one2">
+            </div>
+            <div class="image2 two2">
+            </div>
+            <div class="image2 three2">
+            </div>
+        </div>
     </span>
 
     <span class="page5">
         <span class="top">
             <h1>Info Terbaru</h1>
             <div class="container">
-                <div>Berita Sekolah</div>
-                <div>Prestasi</div>
-                <div>Karya Tulis</div>
+                <div id="button1">Berita Sekolah</div>
+                
+                <div id="button2">Prestasi</div>
+                <div id="button3">Karya Tulis</div>
             </div>
         </span>
         <span class="bottom">
-            <div class="left"></div>
+            <div class="container">
+                <div class="image3 one3" id="img1"></div>
+                <div class="image3 two3" id="img2"></div>
+                <div class="image3 three3" id="img3"></div>
+            </div>
         </span>
     </span>
 
@@ -76,14 +101,23 @@
                 <div>
                     <span class="logo"></span>
                     <h1>FOLLOW US</h1>
-                    <span class="facebook"></span>
-                    <span class="youtube"></span>
-                    <span class="instagram"></span>
+                    <div class="contacts-logo"></div>
                 </div>
 
                 <div>
                     <h1>INFO KONTAK</h1>
-                    <span></span><p>insert alamat here</p>
+                    <div class="contacts">
+                        <span>🌏</span><p>Jln. ABCD 1234</p>
+                    </div>
+                    <div class="contacts">
+                        <span>📱</span><p>0898-0000-000</p>
+                    </div>
+                    <div class="contacts">
+                        <span>✉️</span><p>kontak@sekolah.sch.id</p>
+                    </div>
+                    <div class="contacts">
+                        <span>🕒</span><p>Senin - Jumat, Pukul 06:30 - 15:30</p>
+                    </div>
                 </div>
 
                 <div>
@@ -130,8 +164,7 @@
                 </div>
             </div>
         </div>
-        <nav class="line"></nav>
     </span>
 </body>
-<script src="script.js"></script>
+<script src="node.js"></script>
 </html>
