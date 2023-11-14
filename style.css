@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 nav.top-color {
@@ -38,10 +39,10 @@ nav.top {
     font-size: 1vw;
     left: 10vw;
     right: 10vw;
+    z-index: 100;
 }
 
 nav.video {
-    width: 100%;
     height: calc(100vh - 20vh);
     background-color: gray;
     /* position: relative; */
@@ -59,6 +60,7 @@ nav.whatsapp {
     bottom: 2.5vh;
     gap: 0.25vw;
     font-size: 0.76vw;
+    z-index: 100;
 }
 
 nav.whatsapp div.text {
@@ -130,19 +132,68 @@ span.page2 div.school-tour h1 {
     margin: 8vh 0 8vh 0;
 }
 
-span.page2 div.school-tour span.school-tour-video {
-    width: inherit;
-    height: 42.5vh;
-    background-color: black;
-}
-
 span.page3 {
     width: 70vw;
     height: 75vh;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display: flex;
     margin: 0 auto;
     flex-direction: column;
+}
+
+span.page3 div.slideshow div.minus, div.plus {
+    position: absolute;
+    color: white;
+    font-size: 10vh;
+    display: flex;
+    opacity: 0;
+    z-index: 50;
+}
+
+span.page3 div.slideshow div.one {
+    background-image: url(assets/Screenshot\ \(171\).png);
+    width: inherit;
+    background-color: green;
+    height: inherit;
+    background-size: 100% 100%;
+}
+
+span.page3 div.slideshow div.two {
+    background-image: url(assets/Screenshot\ \(172\).png);
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    background-size: 100% 100%;
+}
+
+span.page3 div.slideshow div.three {
+    background-image: url(assets/Screenshot\ \(173\).png);
+    width: inherit;
+    height: inherit;
+    background-size: 100% 100%;
+    background-color: blue;
+}
+
+div.slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+span.page3 div.slideshow div.minus{
+    position: absolute;
+    top: 28.5vh;
+    cursor: pointer;
+}
+
+span.page3 div.slideshow div.minus:hover, div.plus:hover{
+    opacity: 1;
+}
+
+span.page3 div.slideshow div.plus{
+    position: absolute;
+    top: 28.5vh;
+    right: 0vh;
+    cursor: pointer;
 }
 
 span.page3 h1 {
@@ -159,27 +210,75 @@ span.page3 div.slideshow {
 span.page4 {
     width: 100%;
     height: 90vh;
-    background-color: burlywood;
     display: flex;
+    margin-top: 7.5vh;
+}
+
+span.page4 div.slideshow2 {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+span.page4 div.image2 {
+    height: 90vh;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+span.page4 div.slideshow2 div.one2 {
+    background-image: url(assets/Screenshot\ \(174\).png);
+    background-color: green;
+    background-size: 100% 100%;
+}
+
+span.page4 div.slideshow2 div.two2 {
+    background-image: url(assets/Screenshot\ \(175\).png);
+    background-color: white;
+    background-size: 100% 100%;
+}
+
+span.page4 div.slideshow2 div.three2 {
+    background-image: url(assets/Screenshot\ \(176\).png);
+    background-size: 100% 100%;
+    background-color: blue;
+}
+
+span.page4 div.slideshow2 div.minus2, div.plus2{
+    font-size: 5vw;
+    position: absolute;
+}
+
+span.page4 div.slideshow2 div.minus2 {
+    top: 35vh;
+}
+span.page4 div.slideshow2 div.plus2 {
+    top: 35vh;
+    right: 0vh;
 }
 
 span.page5 {
     width: 70vw;
     height: 85vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 span.page5 span.top {
     display: flex;
     width: inherit;
     height: 15vh;
-    background-color: skyblue;
+    /* background-color: skyblue; */
 }
 
 span.page5 span.top h1 {
     width: 45vw;
+    line-height: 2vh;
 }
 
 span.page5 span.top div.container {
@@ -187,9 +286,43 @@ span.page5 span.top div.container {
     justify-content: space-around;
     width: 25vw;
     height: 5vh;
-    background-color: red;
-    margin: 10vh 0 0 0;
-    line-height: 7vh;
+    /* background-color: red; */
+    line-height: 15vh;
+}
+
+span.page5 span.bottom {
+    height: 70vh;
+    width: 70vw;
+}
+
+span.page5 span.bottom div.container{
+    overflow: hidden;
+    height: 70vh;
+    width: 70vw;
+    /* background-color: red; */
+}
+
+span.page5 div.container div.image3 {
+    width: inherit;
+    height: inherit;
+}
+
+span.page5 div.container div.one3 {
+    background-image: url(assets/Screenshot\ \(167\).png);
+    background-color: green;
+    background-size: 100% 100%;
+}
+
+span.page5 div.container div.two3 {
+    background-image: url(assets/Screenshot\ \(169\).png);
+    background-color: white;
+    background-size: 100% 100%;
+}
+
+span.page5 div.container div.three3 {
+    background-image: url(assets/Screenshot\ \(170\).png);
+    background-size: 100% 100%;
+    background-color: blue;
 }
 
 span.page6 {
@@ -200,7 +333,7 @@ span.page6 {
 span.page6 div.top {
     width: 100%;
     height: 15vh;
-    background-color: darkcyan;
+    background-color: rgb(0, 130, 130);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -217,9 +350,10 @@ span.page6 div.top h1 {
 span.page6 div.top button {
     height: 5.75vh;
     width: 12.5vw;
+    color: white;
     border-color: lightgray;
     font-weight: bold;
-    background-color: darkcyan;
+    background-color: rgb(0, 130, 130);
     border-width: 0.5vh;
     margin: 4.125vh 10vw 4.125vh 0vh;
 }
@@ -247,7 +381,7 @@ span.page6 div.bottom div.container {
 }
 
 span.page6 div.bottom {
-    background-color: rgb(64, 57, 57);
+    background-color: rgba(32,37,50,255);
     height: 75vh;
 }
 
@@ -271,10 +405,28 @@ span.page6 div.bottom div.container div div nav {
     color: blue;
 }
 
+span.page6 div.bottom div.container div h1 {
+    font-size: 2.75vh;
+    margin-bottom: 5vh;
+}
+
 span.page6 div.bottom div.container div span.logo{
-    background-image: url(assets/logokumbang.png);
+    background-image: url(assets/logokumbang-light.png);
     width: 15vw;
-    height: 15vh;
+    height: 27.5vh;
+    background-size: 100% 100%;
+    margin-bottom: 5vh;
+}
+
+span.page6 div.bottom div.container div div.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+span.page6 div.bottom div.container div div.contacts-logo {
+    background-image: url(assets/Screenshot\ \(177\).png);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
 }
 
 nav.line {
