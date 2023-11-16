@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+
+nav.top {
+    width: 80vw;
+    height: 11vh;
+    line-height: 11vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0.25vh 0.25vh 0.25vh 0.25vh lightgray;
+    margin: 0 auto;
+    position: fixed;
+    margin-top: -5.5vh;
+    font-size: 1vw;
+    left: 10vw;
+    right: 10vw;
+    z-index: 100;
+}
+
+nav.top a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.top a.logo {
+    background: url(assets/logokumbang.png);
+    background-size: 100% 100%;
+    height: 11vh;
+    width: 20vh;
+    background-repeat: no-repeat;
+    margin: 0 1vw 0 1vw;
+}
+
+nav.top-color {
+    width: 100%;
+    height: 12vh;
+    position: relative;
+    background-color: rgba(32,37,50,255);
+}
+
+nav.whatsapp {
+    display: flex;
+    /* background-color: red; */
+    width: 16vw;
+    height: 7vh;
+    line-height: 7vh;
+    position: fixed;
+    right: 0vw;
+    bottom: 2.5vh;
+    gap: 0.25vw;
+    font-size: 0.76vw;
+    z-index: 100;
+}
+
+nav.whatsapp div.text {
+    display: flex;
+    gap: 0.3vw;
+    background-color: lightgray;
+    border-radius: 1vh;
+    height: 5vh;
+    margin: 1vh 0 1vh 0;
+    line-height: 5vh;
+    width: 12vw;
+    justify-content: center;
+}
+
+nav.whatsapp span.logo {
+    background-size: 100% 100%;
+    background-image: url(assets/whatsapp-logo.png);
+    width: 7vh;
+    height: 7vh;
+    background-repeat: no-repeat;
+}
+
+span.pictures{
+    width: 77.5vw;
+    height: 55vh;
+    /* background-color: yellow; */
+    display: flex;
+    /* position: relative; */
+    margin: 0 auto;
+    margin-top: 17.5vh;
+    flex-direction: column;
+}
+
+span.pictures h1 {
+    font-weight: lighter;
+    font-size: 2.75vw;
+    width: 77.5vw;
+}
+
+span.pictures div.container {
+    display: flex;
+    width: 77.5vw;
+    height: 40vh;
+    /* background-color: cyan; */
+    /* justify-content: space-between; */
+    gap: 10vw;
+    margin-top: 8.25vh;
+}
+
+span.pictures div.container div.buildings {
+    background-size: 100% 100%;
+    width: 17.5vw;
+    height: 40vh;
+}
+
+span.pictures div.picture1 {
+    background-image: url(assets/building1.png);
+}
+span.pictures div.picture2 {
+    background-image: url(assets/building2.png);
+}
+span.pictures div.picture3 {
+    background-image: url(assets/building3.png);
+}
+
+nav.bottom {
+    display: flex;
+    /* background-color: purple; */
+    width: 77.5vw;
+    height: 110vh;
+    margin: 0 auto;
+    margin-top: 7.5vh;
+}
+
+nav.bottom nav.contacts {
+    width: 30vw;
+    height: inherit;
+    /* background-color: yellow; */
+}
+
+nav.bottom nav.contacts div {
+    display: flex;
+    border-bottom: #f0f0f0 0.3vh solid;
+    width: inherit;
+    height: 8vh;
+    background-color: white;
+    line-height: 8vh;
+    gap: 3.5vh;
+}
+
+nav.bottom nav.contacts div span, a {
+    margin-left: 2.5vh;
+}
+
+nav.bottom nav.contacts div.sosmed a {
+    width: 2.5vw;
+    height: 5vh;
+    background-size: 100% 100%;
+    margin: 1.5vh 0 1.5vh 0;
+}
+
+nav.bottom nav.contacts div.sosmed a.insta {
+    background-image: url(assets/instagram.png);
+    margin-left: 1.5vw;
+}
+nav.bottom nav.contacts div.sosmed a.facebook {
+    background-image: url(assets/facebook.png);
+}
+nav.bottom nav.contacts div.sosmed a.youtube {
+    background-image: url(assets/youtube.png);
+}
+
+nav.bottom nav.feedback-form {
+    width: 40vw;
+    height: inherit;
+    /* background-color: paleturquoise; */
+    margin-left: 7.5vw;
+}
+
+nav.bottom nav.feedback-form h1 {
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+nav.bottom nav.feedback-form p.gray {
+    color: gray;
+}
+
+nav.bottom nav.feedback-form div.tujuan-pernyataan {
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.tujuan-pernyataan div.text p {
+    font-weight: bold;
+}
+
+div.text {
+    display: flex;
+    gap: 1vh;
+}
+
+.orangered {
+    color: orangered;
+}
+
+nav.bottom nav.feedback-form div.tujuan-pernyataan div.input {
+    width: 40vw;
+    height: 7.5vh;
+    background-color: white;
+    line-height: 7.5vh;
+    border: darkgray 0.25vh solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.bottom nav.feedback-form div.input p {
+    margin-left: 1.5vw;
+    color: rgb(153, 153, 153);
+}
+
+nav.bottom nav.feedback-form div.input div {
+    color: darkslategray;
+    font-size: 5vh;
+    margin-right: 5vh;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.black {
+    color: black;
+}
+
+nav.bottom nav.feedback-form div.options {
+    width: 30vw;
+    height: 9vh;
+    /* background-color: white; */
+    border-radius: 0.5vh;
+    position: absolute;
+}
+
+nav.bottom nav.feedback-form div.tujuan-pernyataan div.options div {
+    width: 30vw;
+    height: 3vh;
+    border: gray 0.125vh solid;
+    background-color: white;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+nav.bottom nav.feedback-form div.tujuan-pernyataan div.options div:hover {
+    background-color: darkcyan;
+}
+
+nav.bottom nav.feedback-form div.nama {
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.nama p {
+    font-weight: bold;
+}
+
+nav.bottom nav.feedback-form div.nama input {
+    width: 40vw;
+    height: 7.5vh;
+}
+
+nav.bottom nav.feedback-form div.email {
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.email p {
+    font-weight: bold;
+}
+
+nav.bottom nav.feedback-form div.email input {
+    width: 40vw;
+    height: 7.5vh;
+}
+
+nav.bottom nav.feedback-form div.nomor_hp {
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.nomor_hp p {
+    font-weight: bold;
+}
+
+nav.bottom nav.feedback-form div.nomor_hp input {
+    width: 40vw;
+    height: 7.5vh;
+}
+
+nav.bottom nav.feedback-form div.pesan {
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.pesan p {
+    font-weight: bold;
+}
+
+nav.bottom nav.feedback-form div.pesan input {
+    width: 40vw;
+    height: 20vh;
+}
+
+nav.bottom nav.feedback-form div.submit {
+    display: flex;
+    height: 7vh;
+    /* background-color: gray; */
+    margin-top: 5vh;
+}
+
+nav.bottom nav.feedback-form div.submit a.submit {
+    width: 6vw;
+    height: 6vh;
+    background-color: darkolivegreen;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    line-height: 6vh;
+    display: flex;
+    justify-content: center;
+}
+
+div.bottom2 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-color: rgba(32, 37, 50, 255);
+}
+
+div.bottom2 div.container div span.logo {
+    display: flex;
+    background-image: url(assets/logokumbang-light.png);
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 15vh;
+    background-repeat: no-repeat;
+}
+
+div.bottom2 div.container {
+    display: flex;
+    gap: 1vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+div.bottom2 div.container div {
+    width: 20vw;
+    height: 50vh;
+    /* background-color: pink; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.bottom2 div.container div div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    font-size: 1.25vw;
+}
+
+div.bottom2 div.container div div nav {
+    color: blue;
+}
+
+div.bottom2 div.container div h1 {
+    font-size: 2.75vh;
+    margin-bottom: 5vh;
+}
+
+div.underline {
+    text-decoration: underline;
+}
+
+div.bottom2 div.container div span.logo{
+    background-image: url(assets/logokumbang-light.png);
+    width: 15vw;
+    height: 27.5vh;
+    background-size: 100% 100%;
+    margin-bottom: 5vh;
+}
+
+div.bottom2 div.container div div.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+div.bottom2 div.container div div.contacts-logo {
+    background-image: url(assets/Screenshot\ \(177\).png);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+nav.line {
+    color: white;
+    width: 80%;
+    height: 0.25vh;
+}
